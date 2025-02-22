@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | My project (8)</title>
+    <title>Tic Tac Toe</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <style>
@@ -73,19 +73,20 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Tic Tac Toe Web.loader.js";
-      var config = {
-        arguments: [],
-        dataUrl: buildUrl + "/Tic Tac Toe Web.data",
-        frameworkUrl: buildUrl + "/Tic Tac Toe Web.framework.js",
-        codeUrl: buildUrl + "/Tic Tac Toe Web.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "My project (8)",
-        productVersion: "1.0",
-        showBanner: unityShowBanner,
-      };
+var buildUrl = "https://github.com/Parshwa1234/Tic-Tac-Toe/releases/download/untagged-052813a3187a32a2b84c";
+
+var config = {
+    arguments: [],
+    dataUrl: buildUrl + "/Tic.Tac.Toe.Web.data",
+    frameworkUrl: buildUrl + "/Tic.Tac.Toe.Web.framework.js",
+    codeUrl: buildUrl + "/Tic.Tac.Toe.Web.wasm",
+    streamingAssetsUrl: "StreamingAssets",
+    companyName: "DefaultCompany",
+    productName: "My project (8)",
+    productVersion: "1.0",
+    showBanner: unityShowBanner,
+};
+
 
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
